@@ -1,0 +1,22 @@
+version: '3'
+services:
+  mysql-db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 61611616
+      MYSQL_DATABASE: golang
+    ports:
+      - "3306:3306"
+
+  my-go-app:
+    build: .
+    environment:
+      DB_USER: root
+      DB_PASSWORD: 61611616
+      DB_NAME: golang
+      DB_HOST: mysql-db
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql-db

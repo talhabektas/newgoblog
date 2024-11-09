@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/joy": "^5.0.0-beta.48",
+    "@shadcn/ui": "^0.0.4",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "lucide-react": "^0.453.0",
+    "next": "^14.2.15",
+    "react-bootstrap": "^2.10.4",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  }
+}
